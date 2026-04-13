@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Hasan",
+    "picture": "https://www.shutterstock.com/image-photo/closeup-portrait-serious-handsome-indian-260nw-2333290529.jpg",
+    "email": "arif.hasan@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied Computer Science together. Used to code late nights before exams.",
+    "goal": 7,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://img.freepik.com/free-photo/young-beautiful-girl-posing-black-leather-jacket-park_1153-8104.jpg",
+    "email": "nusrat.jahan@yahoo.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["office", "project team"],
+    "bio": "Worked together on a fintech startup project. Very organized and supportive.",
+    "goal": 22,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 3,
+    "name": "Rafiul Karim",
+    "picture": "https://i.pinimg.com/736x/bf/2e/69/bf2e69e6293dbd69a2a52e75c6d8d689.jpg",
+    "email": "rafiul.karim@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "football"],
+    "bio": "School friend and regular football partner every Friday evening.",
+    "goal": 14,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 4,
+    "name": "Farzana Rahman",
+    "picture": "https://i.pinimg.com/736x/07/34/f8/0734f8d310f2db45b2227139df0851d4.jpg",
+    "email": "farzana.rahman@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["family friend", "neighbor"],
+    "bio": "Grew up in the same neighborhood. Our families are closely connected.",
+    "goal": 19,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 5,
+    "name": "Imran Chowdhury",
+    "picture": "https://i.pinimg.com/736x/85/3c/cf/853ccfc2b821c762d127d57c833dc205.jpg",
+    "email": "imran.chowdhury@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym partner who keeps me motivated to stay consistent with workouts.",
+    "goal": 25,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 6,
+    "name": "Sadia Islam",
+    "picture": "https://i.pinimg.com/736x/e6/d5/1f/e6d51faf046305e738c57bfc7ade16da.jpg",
+    "email": "sadia.islam@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["university", "study group"],
+    "bio": "We used to prepare presentations together. Great at explaining complex topics.",
+    "goal": 8,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 7,
+    "name": "Tanvir Ahmed",
+    "picture": "https://iconpolls.com/storage/poll/TieoQqfDpO/option_images/iZ53lRd5zLc9EPswRXachna6iJBNYetCodUVvYxW.jpg",
+    "email": "tanvir.ahmed@yahoo.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["startup", "business"],
+    "bio": "Co-founded a small e-commerce business together during university days.",
+    "goal": 28,
+    "next_due_date": "2026-04-07"
+  },
+  {
+    "id": 8,
+    "name": "Mithila Roy",
+    "picture": "https://photosly.in/wp-content/uploads/2024/08/cute-girl-pic55.jpg",
+    "email": "mithila.roy@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["travel", "close friend"],
+    "bio": "We love traveling together and have explored several districts across Bangladesh.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  }
+]
