@@ -23,7 +23,7 @@ const Navbar = () => {
                 }
               >
                 <RiHome2Line />
-                Home
+                <span className="hidden sm:inline">Home</span>
               </NavLink>
             </li>
             <li>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 }
               >
                 <IoTimeOutline />
-                Timeline
+                <span className="hidden sm:inline">Timeline</span>
               </NavLink>
             </li>
             <li>
@@ -45,7 +45,7 @@ const Navbar = () => {
                 }
               >
                 <PiChartLine />
-                Stats
+                <span className="hidden sm:inline">Stats</span>
               </NavLink>
             </li>
           </ul>
