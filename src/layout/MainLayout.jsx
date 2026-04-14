@@ -4,9 +4,11 @@ import Navbar from "../components/shared/Navbar";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <Outlet />
+      <div className="bg-[#F8FAFC] flex-1">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   );
