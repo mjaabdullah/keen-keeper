@@ -5,9 +5,9 @@ const Footer = () => {
   return (
     <footer className="bg-[#244D3F]">
       <div className="container mx-auto">
-        <section className="footer footer-horizontal footer-center text-primary-content p-2.5 md:p-10 gap-3 pb-2.5">
+        <section className="footer footer-horizontal footer-center text-primary-content p-2.5 pt-7 md:p-10 gap-3 pb-2.5">
           <aside>
-            <h2 className="text-5xl font-bold">KeenKeeper</h2>
+            <h2 className="text-3xl sm:text-5xl font-bold">KeenKeeper</h2>
             <p>
               Your personal shelf of meaningful connections. Browse, tend, and
               nurture the relationships that matter most.
