@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../layout/MainLayout";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import FriendDetails from "../pages/FriendDetails/FriendDetails";
 import HomePage from "../pages/HomePage/HomePage";
 import Stats from "../pages/Stats/Stats";
 import Timeline from "../pages/Timeline/Timeline";
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: "stats",
         Component: Stats,
+      },
+      {
+        path: "friend/:id",
+        Component: FriendDetails,
       },
     ],
     errorElement: <ErrorPage />,

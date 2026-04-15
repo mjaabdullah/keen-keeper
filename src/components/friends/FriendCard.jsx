@@ -1,5 +1,8 @@
+import { useNavigate } from "react-router";
+
 const FriendCard = ({ friend }) => {
-  const { name, days_since_contact, status, picture, tags } = friend;
+  const { id, name, days_since_contact, status, picture, tags } = friend;
+  const navigate = useNavigate();
 
   const getStatusBadge = () => {
     if (status === "overdue") {
@@ -15,7 +18,10 @@ const FriendCard = ({ friend }) => {
   };
 
   return (
-    <div className="card bg-base-100 shadow hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-base-200">
+    <div
+      onClick={() => navigate(`friend/${id}`)}
+      className="card bg-base-100 shadow hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-base-200"
+    >
       <div className="card-body items-center text-center p-6">
         <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-md mb-2">
           <img
