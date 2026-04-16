@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import { LuMessageSquareMore, LuPhoneCall, LuVideo } from "react-icons/lu";
 import Card from "../../components/hero/Card";
+import { TimelineContext } from "../../context/TimelineContext";
 
 const RightCard = ({ currentFriend }) => {
+  const { handleTimelineData } = useContext(TimelineContext);
   const {
     id,
     name,
@@ -55,19 +58,28 @@ const RightCard = ({ currentFriend }) => {
       <div className="bg-white rounded-lg shadow-sm p-6">
         <h3 className="text-[#244D3F] text-[20px] mb-4">Quick Check-In</h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-          <div className="bg-[#F8FAFC] rounded-lg border border-[#E9E9E9] p-5 text-lg flex flex-col items-center gap-2">
+          <div
+            onClick={() => handleTimelineData("Call", name)}
+            className="bg-[#F8FAFC] rounded-lg border border-[#E9E9E9] p-5 text-lg flex flex-col items-center gap-2"
+          >
             <span className="text-3xl">
               <LuPhoneCall />
             </span>
             <span className="text-[#1F2937]">Call</span>
           </div>
-          <div className="bg-[#F8FAFC] rounded-lg border border-[#E9E9E9] p-5 text-lg flex flex-col items-center gap-2">
+          <div
+            onClick={() => handleTimelineData("Text", name)}
+            className="bg-[#F8FAFC] rounded-lg border border-[#E9E9E9] p-5 text-lg flex flex-col items-center gap-2"
+          >
             <span className="text-3xl">
               <LuMessageSquareMore />
             </span>
             <span className="text-[#1F2937]">Text</span>
           </div>
-          <div className="bg-[#F8FAFC] rounded-lg border border-[#E9E9E9] p-5 text-lg flex flex-col items-center gap-2">
+          <div
+            onClick={() => handleTimelineData("Video", name)}
+            className="bg-[#F8FAFC] rounded-lg border border-[#E9E9E9] p-5 text-lg flex flex-col items-center gap-2"
+          >
             <span className="text-3xl">
               <LuVideo />
             </span>

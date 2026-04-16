@@ -23,7 +23,7 @@ const FriendCard = ({ friend }) => {
       className="card bg-base-100 shadow hover:shadow-xl transition-all duration-300 h-full flex flex-col border border-base-200"
     >
       <div className="card-body items-center text-center p-6">
-        <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow-md mb-2">
+        <div className="w-20 h-20 rounded-full overflow-hidden  shadow-md mb-2">
           <img
             src={picture || `https://i.pravatar.cc/300?u=${name}`}
             alt={name}
@@ -43,7 +43,7 @@ const FriendCard = ({ friend }) => {
               key={index}
               className="badge badge-soft font-medium badge-success"
             >
-              {tag}
+              {tag.toUpperCase()}
             </div>
           ))}
         </div>

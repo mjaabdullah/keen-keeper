@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#244D3F]">
       <div className="container mx-auto">
-        <section className="footer footer-horizontal footer-center text-primary-content p-2.5 pt-7 md:p-10 gap-3 pb-2.5">
+        <section className="footer footer-horizontal footer-center text-primary-content px-2.5 pt-8 gap-3">
           <aside>
             <h2 className="text-3xl sm:text-5xl font-bold">KeenKeeper</h2>
             <p>
@@ -29,7 +29,7 @@ const Footer = () => {
           </nav>
         </section>
         <div className="divider"></div>
-        <section className="footer sm:footer-horizontal text-gray-400 items-center justify-center sm:justify-between px-3 py-8 pt-4 gap-2">
+        <section className="footer sm:footer-horizontal text-gray-400 items-center justify-center sm:justify-between px-3 py-8 pt-1 gap-2">
           <aside className="grid-flow-col items-center">
             <p>© {new Date().getFullYear()} KeenKeeper. All rights reserved.</p>
           </aside>

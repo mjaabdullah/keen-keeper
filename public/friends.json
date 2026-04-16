@@ -30,7 +30,7 @@
     "email": "rafiul.karim@outlook.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["school", "football"],
+    "tags": ["school"],
     "bio": "School friend and regular football partner every Friday evening.",
     "goal": 14,
     "next_due_date": "2026-04-22"
@@ -54,7 +54,7 @@
     "email": "imran.chowdhury@gmail.com",
     "days_since_contact": 13,
     "status": "almost due",
-    "tags": ["gym", "fitness"],
+    "tags": ["college"],
     "bio": "Gym partner who keeps me motivated to stay consistent with workouts.",
     "goal": 25,
     "next_due_date": "2026-04-14"

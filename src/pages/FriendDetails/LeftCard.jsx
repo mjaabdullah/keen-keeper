@@ -3,8 +3,7 @@ import { LuArchive } from "react-icons/lu";
 import { RiDeleteBinLine } from "react-icons/ri";
 
 const LeftCard = ({ currentFriend }) => {
-  const { id, name, days_since_contact, status, picture, tags, bio } =
-    currentFriend;
+  const { name, status, picture, tags, bio, email } = currentFriend;
 
   const getStatusBadge = () => {
     if (status === "overdue") {
@@ -43,7 +42,8 @@ const LeftCard = ({ currentFriend }) => {
               </div>
             ))}
           </div>
-          <em>{bio}</em>
+          <em className="text-[#64748B]">{bio}</em>
+          <span className="text-[#64748B]">{email}</span>
         </div>
       </div>
       <div className="space-y-4">

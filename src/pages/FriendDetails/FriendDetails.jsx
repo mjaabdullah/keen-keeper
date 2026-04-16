@@ -19,7 +19,7 @@ const FriendDetails = () => {
   }, []);
 
   const currentFriend = friends.find((friend) => friend.id === Number(id));
-  console.log(currentFriend);
+  
 
   return (
     <div className="container mx-auto px-3 my-20">
@@ -27,10 +27,14 @@ const FriendDetails = () => {
         {loading && <PropagateLoader color="#244D3F" size={22} />}
       </div>
       <div>
-        {currentFriend && (
+        {currentFriend ? (
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
             <LeftCard currentFriend={currentFriend} />
             <RightCard currentFriend={currentFriend} />
+          </div>
+        ) : (
+          <div className="text-3xl text-gray-400 text-center">
+            No data found
           </div>
         )}
       </div>
