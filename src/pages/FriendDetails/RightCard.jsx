@@ -5,17 +5,7 @@ import { TimelineContext } from "../../context/TimelineContext";
 
 const RightCard = ({ currentFriend }) => {
   const { handleTimelineData } = useContext(TimelineContext);
-  const {
-    id,
-    name,
-    days_since_contact,
-    status,
-    picture,
-    tags,
-    bio,
-    goal,
-    next_due_date,
-  } = currentFriend;
+  const { name, days_since_contact, goal, next_due_date } = currentFriend;
   const formatted = new Date(next_due_date).toLocaleDateString("en-US", {
     year: "numeric",
     month: "short",
@@ -54,7 +44,6 @@ const RightCard = ({ currentFriend }) => {
           <button className="btn">Edit</button>
         </div>
       </div>
-
       <div className="bg-white rounded-lg shadow-sm p-6">
         <h3 className="text-[#244D3F] text-[20px] mb-4">Quick Check-In</h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
