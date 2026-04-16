@@ -8,12 +8,15 @@ const TimelineProvider = ({ children }) => {
 
   const handleTimelineData = (actionType, name) => {
     const date = new Date().toDateString();
+
     const actionDetail = {
-      title: `${actionType} with ${name}`,
+      name,
       date,
+      actionType,
     };
+    console.log(actionDetail);
     setTimelineData([...timelineData, actionDetail]);
-    toast.success(actionDetail.title + "!");
+    toast.success(`${actionType} with ${name}!`);
   };
   const data = {
     timelineData,
