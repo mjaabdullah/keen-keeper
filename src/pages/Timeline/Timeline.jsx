@@ -7,8 +7,10 @@ const Timeline = () => {
   const { timelineData } = useContext(TimelineContext);
   const [filterData, setFilterData] = useState(timelineData);
   const handleFilter = (type) => {
-    const newData = timelineData.filter((data) => data.actionType === type);
-    setFilterData(newData);
+    if (type) {
+      const newData = timelineData.filter((data) => data.actionType === type);
+      setFilterData(newData);
+    }
   };
 
   return (
@@ -16,10 +18,12 @@ const Timeline = () => {
       <h1 className="text-3xl md:text-4xl font-bold mb-5">Timeline</h1>
       <select
         onClick={(e) => handleFilter(e.target.value)}
-        defaultValue="Pick a color"
+        defaultValue=""
         className="select "
       >
-        <option disabled={true}>Filter Timeline</option>
+        <option value="" disabled={true}>
+          Filter Timeline
+        </option>
         <option value="Call">Call</option>
         <option value="Text">Text</option>
         <option value="Video">Video</option>

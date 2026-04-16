@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="bg-base-100 shadow-sm">
+    <div className="bg-base-100 shadow-sm sticky top-0 left-0 right-0 z-50">
       <div className="navbar container mx-auto px-3">
         <div className="flex-1">
           <Link className="text-2xl font-extrabold" to="/">

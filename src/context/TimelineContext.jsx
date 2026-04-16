@@ -14,7 +14,6 @@ const TimelineProvider = ({ children }) => {
       date,
       actionType,
     };
-    console.log(actionDetail);
     setTimelineData([...timelineData, actionDetail]);
     toast.success(`${actionType} with ${name}!`);
   };
