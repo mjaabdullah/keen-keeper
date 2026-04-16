@@ -1,11 +1,19 @@
-import { Legend, Pie, PieChart } from "recharts";
-
-const data = [
-  { name: "Group A", value: 400, fill: "#0088FE" },
-  { name: "Group B", value: 300, fill: "#00C49F" },
-];
+import { useContext } from "react";
+import { Legend, Pie, PieChart, Tooltip } from "recharts";
+import { TimelineContext } from "../../context/TimelineContext";
 
 const Chart = () => {
+  const { timelineData } = useContext(TimelineContext);
+
+  const getChartData = (type) => {
+    return timelineData.filter((item) => item.actionType === type).length;
+  };
+
+  const data = [
+    { name: "Call", value: getChartData("Call"), fill: "#244D3F" },
+    { name: "Text", value: getChartData("Text"), fill: "#7E35E1" },
+    { name: "Video", value: getChartData("Video"), fill: "#37A163" },
+  ];
   return (
     <div className="flex justify-center">
       <PieChart
@@ -27,7 +35,8 @@ const Chart = () => {
           dataKey="value"
           isAnimationActive={true}
         />
-        <Legend />
+        <Tooltip />
+        <Legend wrapperStyle={{ paddingTop: "20px" }} />
       </PieChart>
     </div>
   );
